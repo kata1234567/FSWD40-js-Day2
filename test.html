@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body onresize="myFunction()">
+
+<p id="test">aaaaa</p>
+
+<p>Try to resize the browser window. 5</p>
+
+
+
+</body>
+<script>
+function myFunction() {
+    //alert("You have changed the size of the browser window!");
+
+    var width = this.innerWidth;
+	var height = this.innerHeight;
+	console.log(width + ' ' + height);
+	document.getElementById("test").innerHTML = width + ' ' + height;
+
+}
+</script>
+</html>
