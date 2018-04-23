@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="basic_1.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <p id='message'></p>
+    <script type="text/javascript">
+    
+    try {
+ 
+    	var e = new Error ("An error has occured ... The prompt must be fixed"); 
+    	throw e; 
+
+        var person = prompts("Please enter your name", "Harry Potter");
+
+        document.getElementById("message").innerHTML =
+
+            "Hello " + person + "! How are you today?";
+    } 
+    catch(e){
+        alert(e.message); 
+    }
+    </script>
+
+
+</body>
+
+</html>
