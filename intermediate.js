@@ -40,14 +40,20 @@ function grades(){
 
 	if(math >= 1 && math <= 5) {
 		var resultMath = math;
+	}else{
+		alert('Please enter a valid grade')
 	}
 
 	if(physics >= 1 && physics <= 5){
 		var resultPhysics = physics;
+	}else{
+		alert('Please enter a valid grade')
 	}
 
 	if(english >= 1 && english <= 5){
 		var resultEnglish = english;
+	}else{
+		alert('Please enter a valid grade')
 	}
 
 	var sum = resultMath + resultPhysics + resultEnglish;
@@ -56,6 +62,7 @@ function grades(){
 }
 
 console.log(grades());
+document.write(grades());
 
 function myFunction() {
     //alert("You have changed the size of the browser window!");
